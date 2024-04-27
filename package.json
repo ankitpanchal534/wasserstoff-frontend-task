@@ -1,6 +1,8 @@
 {
   "name": "wasserstoff-frontend-task",
   "version": "0.1.0",
+  "author": "Ankit Kumar <ankitpanchal534@gmail.com>",
+  "description": "Created by ankit kumar for frontend interview",
   "private": true,
   "scripts": {
     "dev": "next dev",

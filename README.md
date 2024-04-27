@@ -8,7 +8,7 @@
 ## Features
 
 - Fully functional application
-- Responsive design
+- Responsive design only for laptop/desktop
 - Animations implemented as per Figma design
 - Well-structured, readable, and commented code
 

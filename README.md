@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wasserstoff Frontend Task
 
-## Getting Started
+## Built With
 
-First, run the development server:
+- **Next.js**
+- **Tailwind CSS**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Fully functional application
+- Responsive design
+- Animations implemented as per Figma design
+- Well-structured, readable, and commented code
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the repository:**
 
-## Learn More
+   ```
+   git clone https://github.com/ankitpanchal534/wasserstoff-frontend-task
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+   Navigate to the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
+   cd wasserstoff-frontend-task
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   Install dependencies:
 
-## Deploy on Vercel
+   ```
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Usage
+   Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```
+   npm run dev
+   ```
+
+   Open your browser and navigate to http://localhost:3000 to view the application.
+
+   ## Approach
+
+   I approached this project by closely following the design provided in Figma. I utilized Tailwind CSS for styling to ensure that the colors, typography, and layout matched the design as closely as possible. Additionally, I implemented all user interactions and animations to replicate the Figma design. The code is well-structured, readable, and commented to enhance maintainability and readability.
+
+## Contributing
+
+Contributions are welcome. Please submit any bug fixes or feature requests as issues or pull requests.
+
+Author
+© Ankit Kumar

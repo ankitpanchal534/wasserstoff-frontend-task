@@ -43,7 +43,7 @@
 
    ## Approach
 
-   I approached this project by closely following the design provided in Figma. I utilized Tailwind CSS for styling to ensure that the colors, typography, and layout matched the design as closely as possible. Additionally, I implemented all user interactions and animations to replicate the Figma design. The code is well-structured, readable, and commented to enhance maintainability and readability.
+   I approached this project by closely following the design provided in Figma. I utilized Tailwind CSS for styling. Approaching the assignment felt like building a project step by step. I kicked things off by creating the project using npx create-next-app. Once the foundation was set, I started with the background card, then moved on to crafting the sidebar card. Next up was implementing the slider cards, where I added a neat auto-scroll feature for better user experience. As the structure took shape, I dove into styling with CSS, tweaking elements to enhance visual appeal. Then came the exciting part—making the buttons functional for events and collections, ensuring seamless navigation. To add more depth, I crafted event and collection cards, giving them a distinct look. Finally, I put the finishing touches with some CSS finesse, making sure everything looked polished and cohesive. Each step brought me closer to the final result, and with every completed task, I felt a sense of progress and accomplishment.
 
 ## Contributing
 

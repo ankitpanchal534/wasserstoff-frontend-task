@@ -1,7 +1,16 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import { lexend } from "@/app/fonts";
+import { cn } from "@/utils/cn";
+import { useEffect, useRef, useState } from "react";
+
+const images = [
+  "/Frame 1261154670.jpg",
+  "/Frame 1261154671 (2).jpg",
+  "/Frame 1261154672.jpg",
+  "/Frame 1261154671.jpg",
+];
 
 export default function CardSlider() {
   const containerRef: any = useRef(null);
@@ -78,42 +87,36 @@ export default function CardSlider() {
   }, [isHovered]);
 
   return (
-    <div
-      ref={containerRef}
-      className="absolute scrollbar-none w-[55dvw] pl-64 flex-nowrap left-10 top-48 flex flex-row cursor-grab pointer-events-auto  z-0 gap-5 max-w-[55dvw] overflow-auto pr-32 "
-    >
-      <img
-        src="/Frame 1261154670.jpg"
-        className={`h-full  min-w-[390px]  snap-end slide ${
-          activeSlide === 0 ? "opacity-100" : "opacity-65 duration-100"
-        }`}
-        alt="banner image"
-        data-index={0}
-      />
-      <img
-        src="/Frame 1261154671 (2).jpg"
-        className={`h-full  min-w-[390px] snap-end slide ${
-          activeSlide === 1 ? "opacity-100" : "opacity-65 duration-100"
-        }`}
-        alt="banner image"
-        data-index={1}
-      />
-      <img
-        src="/Frame 1261154672.jpg"
-        className={`h-full  min-w-[390px] snap-end slide ${
-          activeSlide === 2 ? "opacity-100" : "opacity-65 duration-100"
-        }`}
-        alt="banner image"
-        data-index={2}
-      />
-      <img
-        src="/Frame 1261154671.jpg"
-        className={`h-full  min-w-[390px] snap-end slide ${
-          activeSlide === 3 ? "opacity-100" : "opacity-65 duration-100"
-        }`}
-        alt="banner image"
-        data-index={3}
-      />
+    <div>
+      <div
+        ref={containerRef}
+        className="absolute scrollbar-none w-[55dvw] pl-64 flex-nowrap left-10 top-48 flex flex-row cursor-grab pointer-events-auto  z-0 gap-5 max-w-[55dvw] overflow-x-auto overflow-y-hidden pr-32 "
+      >
+        {images.map((img_url, index) => (
+          <div key={index}>
+            <Heading />
+            <img
+              src={img_url}
+              className={`h-full  min-w-[390px]  snap-end  ${
+                activeSlide === index
+                  ? "opacity-100"
+                  : "opacity-65 duration-100"
+              }`}
+              alt="banner image"
+              data-index={index}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
+
+const Heading = () => {
+  return (
+    <div className={cn(lexend.className, " font-bold text-white mb-2")}>
+      <h1 className="text-4xl ">Lunar Palace:</h1>
+      <span className="text-2xl">(ft. Kanye west)</span>
+    </div>
+  );
+};
